@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon-light.png">
+
+    <title>Colin Boelke</title>
+</head>
+<body>
+    
+    <div id="blur"></div>
+    <div id="blob"></div>
+    
+    <div id="color-picker">
+        Color. <input id="color-input" type="color" onchange="colorSwitch()">
+    </div>
+
+    <div id="nav" class="nav">
+        <ul>
+            <li class="btn active">
+                <a href="#about">About</a>
+            </li>
+            <li class="btn">
+                <a href="#projects">Projects</a>
+            </li>
+            <li class="btn">
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="main">
+        <div class="wrapper">
+            <div class="container">
+                    <p class="container-text">Hello, I'm <span id="pixel" class="bold" data-value="COLIN BOELKE">COLIN BOELKE</span></p>
+                    <p class="container-text"><span id="pixel2" class="bold" data-value="SOFTWARE DEVELOPER">SOFTWARE DEVELOPER</span> from Germany.</p>
+            </div>
+        </div>
+    
+        <div class="scroll-down">
+            <p>Learn more about me.</p>
+            <div><a href="#about"><img src="images/arrow-down-light.png"></a></div>
+        </div>
+    </div>
+
+
+    <div class="content">
+    
+        <!-- <section id="Sabout"> -->
+            <div id="about" class="item">
+                <h3 id="about-head" data-value="About me.">About me.</h3>
+                
+                <div class="about">
+    
+                    <div class="about-box" id="about-box1">
+                        With a deep-rooted love for technology and a commitment 
+                        to creating innovative solutions, <span class="text-grey">I've embarked on a journey in 
+                        the ever-evolving world of software development.</span>
+                    </div>
+    
+                    <div class="about-box" id="about-box2">
+                        <a href="https://github.com/mcturn457"><img src="images/github.svg"></a>
+                        <div class="about-box-text">Check my work.</div>
+                    </div>
+    
+                    <div class="about-box" id="about-box3">
+                        <a href="https://www.linkedin.com/in/colin-boelke-07189125b/"><img src="images/linkedin-white.png"></a>
+                        <div class="about-box-text">Get in touch.</div>
+                    </div>
+                    <div class="about-box" id="about-box4">
+                        <!-- <div>Im a</div> -->
+                        <ul>
+                            <li>Problem solver.</li>
+                            <li>Passion for Code.</li>
+                            <li>Crafting Digital Experiences.</li>
+                            <li>Continuous Learning Journey.</li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
+        <!-- </section> -->
+        
+    
+        <!-- <section id="Sproject"> -->
+            <div id="projects" class="item">
+                <h3 id="projects-head" data-value="Latest Projects.">Latest Projects.</h3>
+    
+                <div class="project">
+    
+                    <div class="project-box" id="grid-1">
+
+                        <div class="project-box-wrapper">
+                            <div class="project-box-img" id="pb-1">
+                                <img src="images/nextride-transparent.png">
+                            </div>
+    
+                            <div class="project-box-text" id="pb-2">
+                                One of my most recent projects is a comprehensive platform for e-scooter rental companies.
+                                <span class="text-grey">It offers a unified solution to oversee scooters and charging 
+                                stations from multiple providers.</span>
+                            </div>
+    
+                            <div class="project-box-tech" id="pb-3">
+                                <ul>
+                                    <li><img src="images/javascript.svg">JavaScript</li>
+                                    <li><img src="images/python.svg">Python</li>
+                                    <li><img src="images/django.svg"> Django</li>
+                                    <li><img src="images/html5.svg">HTML</li>
+                                    <li><img src="images/css3.svg">CSS</li>
+                                </ul>
+                            </div>
+    
+                            <div class="project-box-next" id="pb-4">
+                                <a href="https://nextride.up.railway.app/"><i class="arrow right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="project-box" id="grid-2">
+
+                        <div class="project-box-wrapper">
+                            <div class="project-box-img" id="pb-1">
+                                <img src="images/github.svg">
+                            </div>
+    
+                            <div class="project-box-text" id="pb-2">
+                                Want to see some more Projects?<br>
+                                <span class="text-grey">Check out my GitHub profile.</span>
+                            </div>
+    
+                            <div class="project-box-tech" id="pb-3">
+                                <ul>
+                                    <li><img src="images/react.svg">React</li>
+                                    <li><img src="images/nodejs.svg">NodeJS</li>
+                                    <li><img src="images/postgresql.svg">PostgreSQL</li>
+                                </ul>
+                            </div>
+    
+                            <div class="project-box-next" id="pb-4">
+                                <a href="https://github.com/mcturn457"><i class="arrow right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        <!-- </section> -->
+
+        <!-- <section id="Scontact"> -->
+            <div class="item" id="contact">
+                <div class="contact">
+                    <a href="mailto:colin@cboelke.com?subject=Contact">Let me help you create your digital masterpiece.</a>
+                </div>
+    
+                <div class="footer">
+                    <ul>
+                        <li>Colin Boelke.</li>
+                        <li>All Rights Reserved. © 2024</li>
+                    </ul>
+                </div>
+            </div>
+        <!-- </section> -->
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
