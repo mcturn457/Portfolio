@@ -108,8 +108,11 @@ interval['pixel'] = null;
 interval['pixel2'] = null;
 interval['about'] = null;
 interval['projects'] = null;
-interval['contact'] = null;
-interval['submit'] = null;
+interval['footer'] = null;
+interval['rights'] = null;
+interval['nav1'] = null;
+interval['nav2'] = null;
+interval['nav3'] = null;
 
 
 function randomDigits(event, str) {
@@ -134,7 +137,7 @@ function randomDigits(event, str) {
         }
         
         iteration += 1 / 3;
-    }, 30);
+    }, 20);
 }
 
 
@@ -143,6 +146,11 @@ if(bodyWidth > 480){
     document.querySelector("#pixel2").onmouseover = event => randomDigits(event, 'pixel2')
     document.querySelector("#about-head").onmouseover = event => randomDigits(event, 'about')
     document.querySelector("#projects-head").onmouseover = event => randomDigits(event, 'projects')
+    document.querySelector("#footer").onmouseover = event => randomDigits(event, 'footer')
+    document.querySelector("#rights").onmouseover = event => randomDigits(event, 'rights')
+    document.querySelector("#nav1").onmouseover = event => randomDigits(event, 'nav1')
+    document.querySelector("#nav2").onmouseover = event => randomDigits(event, 'nav2')
+    document.querySelector("#nav3").onmouseover = event => randomDigits(event, 'nav3')
 }
 
 // document.querySelector("#about-head").ontouchmove = event => randomDigits(event, 'about')
