@@ -67,8 +67,6 @@ window.onload = function() {
 }
 
 
-
-
 // select the favicon for dark or light mode
 const faviconEl = document.querySelector('link[rel="icon"]')
 
@@ -153,11 +151,8 @@ if(bodyWidth > 480){
     document.querySelector("#nav3").onmouseover = event => randomDigits(event, 'nav3')
 }
 
-// document.querySelector("#about-head").ontouchmove = event => randomDigits(event, 'about')
 
-
-
-// Glow effect
+// glow effect
 
 const blob = document.getElementById("blob");
 
@@ -173,7 +168,7 @@ const blob = document.getElementById("blob");
     }
 
 
-// Navbar anzeigen
+// show navbar
 
 window.onscroll = function() {
 var navbar = document.querySelector('.nav');
@@ -186,7 +181,35 @@ if (window.scrollY > 500) {
 }
 };
 
-// Color Switch
+// show navbar highlight
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const sections = document.querySelectorAll('section');
+//     const navLinks = document.querySelectorAll('nav a');
+
+//     window.addEventListener('scroll', function() {
+//         let current = '';
+
+//         sections.forEach(section => {
+//             const sectionTop = section.offsetTop;
+//             const sectionHeight = section.clientHeight;
+
+//             if (pageYOffset >= sectionTop - sectionHeight / 3) {
+//                 current = section.getAttribute('id');
+//             }
+//         });
+
+//         navLinks.forEach(link => {
+//             link.classList.remove('active');
+//             if (link.getAttribute('href').slice(1) === current) {
+//                 link.classList.add('active');
+//             }
+//         });
+//     });
+// });
+
+
+// color Switch
 
 function colorSwitch() {
     var newColor = document.getElementById('color-input');
@@ -236,33 +259,6 @@ const getContrastRatio = (colorA, colorB) => {
 };
 
 
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     const sections = document.querySelectorAll('section');
-//     const navLinks = document.querySelectorAll('nav a');
-
-//     window.addEventListener('scroll', function() {
-//         let current = '';
-
-//         sections.forEach(section => {
-//             const sectionTop = section.offsetTop;
-//             const sectionHeight = section.clientHeight;
-
-//             if (pageYOffset >= sectionTop - sectionHeight / 3) {
-//                 current = section.getAttribute('id');
-//             }
-//         });
-
-//         navLinks.forEach(link => {
-//             link.classList.remove('active');
-//             if (link.getAttribute('href').slice(1) === current) {
-//                 link.classList.add('active');
-//             }
-//         });
-//     });
-// });
-
-
 // Animations
 
 const observer = new IntersectionObserver((entries) => {
@@ -270,8 +266,6 @@ const observer = new IntersectionObserver((entries) => {
         console.log(entry);
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
         }
     });
 });
@@ -280,6 +274,7 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 
+// show color input
 
 window.onload = function() {
     var colorInput = document.getElementById('color-input');
